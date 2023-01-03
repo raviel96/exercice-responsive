@@ -8,14 +8,24 @@
     width: 600px;
     border: 1px solid black;
     margin: 0 auto;
+    padding: 10px;
 }
 
-figure {
-    display: flex;
+figure img {
+    float: left;
+}
+
+.clear {
+    clear: both;
 }
 
 @media screen and (min-width:540px) {
     .container {
         background-color: red;
+    }
+}
+@media screen and (min-width:1020px) {
+    .container {
+        background-color: yellow;
     }
 }

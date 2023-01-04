@@ -1,0 +1,212 @@
+/*Reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*class*/
+.container {
+    width: 540px;
+    border: 1px solid black;
+    margin: 0 auto;   
+    padding: 0 5px;
+}
+
+.top-navigation {
+    background-color: rgb(147, 81, 209);
+}
+
+.top-navigation ul li {
+    padding: 4px;
+    border-bottom: 1px dashed white;
+}
+
+.top-navigation ul li a {
+    color: white;
+    margin-left: 20px;
+}
+
+/*Header*/
+
+.logo {
+    width: 300px;
+    height: 100px;
+}
+
+header {
+    text-align: center;
+}
+
+header h1{
+    color: blueviolet;
+}
+
+/* Main */
+.article-section {
+    margin-top: 50px;
+}
+
+.article-section figure {
+    padding: 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+.gallery-image {
+    margin-bottom: 5px;
+    border:1px solid black;
+}
+
+.gallery-image figure {
+    display: flex;
+    align-items: center;
+    background-color: bisque;
+}
+
+.gallery-image figure figcaption {
+    font-size: 25px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+section {
+    margin: 70px 0;
+}
+
+section h1 {
+    color: rgb(96, 136, 188);
+}
+
+/*Footer*/
+
+.bottom-navigation ul{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.bottom-navigation ul li a {
+    padding: 10px;
+}
+
+footer {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+footer a {
+    color: white;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        width: 100%;
+    }
+
+    /* Header, nav top*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 20px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .top-navigation ul {
+        display: flex;
+    }
+
+    .top-navigation ul li {
+        border-left: 1px dashed white;
+        border-bottom: none;
+        padding: 10px;
+    }
+
+    .top-navigation ul li a {
+        margin-left: 0;
+    }
+
+    /* Main */
+
+    .article-section figure {
+        background-color: rgb(147, 81, 209);
+        margin-top: 15px;
+    }
+
+    .article-section figure h1{
+        color: white;
+    }
+
+    .article-section figure img {
+        float: left;
+    }
+
+    /* gallery */
+
+    .gallery {
+        display: flex;
+    }
+
+    .gallery-col-1 {
+        margin-right: 5px;
+    }
+    
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        width: 992px;
+    }
+
+    /*Main*/
+
+    .article-section {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+    
+    /*gallery*/
+
+    .gallery {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .gallery-col-1 {
+        margin-right: 0;
+    }
+
+    .gallery-col-1, .gallery-col-2 {
+        display: flex;
+    }
+
+    .gallery-image figure figcaption {
+        margin-left: 10px;
+    }
+}
+
+
+
+

@@ -59,7 +59,7 @@ header h1{
     margin-top: 50px;
 }
 
-.article-section figure {
+.article-section .column {
     padding: 5px;
 }
 
@@ -106,9 +106,8 @@ section h1 {
 
 footer {
     height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    line-height: 210px;
     background-color: blueviolet;
 }
 
@@ -149,16 +148,16 @@ footer a {
 
     /* Main */
 
-    .article-section figure {
+    .article-section .column {
         background-color: rgb(147, 81, 209);
         margin-top: 15px;
     }
 
-    .article-section figure h1{
+    .article-section .column h2{
         color: white;
     }
 
-    .article-section figure img {
+    .article-section .column img {
         float: left;
     }
 

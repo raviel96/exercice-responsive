@@ -186,12 +186,17 @@ footer a {
         justify-content: space-between;
         margin-top: 5px;
     }
-    
+
+    .article-section figure {
+        margin-right: 1%;
+    }
+
     /*gallery*/
 
     .gallery {
         display: flex;
         flex-flow: column nowrap;
+        align-items: center;
     }
 
     .gallery-col-1 {
@@ -200,6 +205,11 @@ footer a {
 
     .gallery-col-1, .gallery-col-2 {
         display: flex;
+    }
+
+    .gallery-image {
+        width: 323px;
+        margin-left: 3px;
     }
 
     .gallery-image figure figcaption {

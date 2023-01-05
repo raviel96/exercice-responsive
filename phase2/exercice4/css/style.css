@@ -213,7 +213,6 @@ footer {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        align-items: center;
     }
 
     .section-article>:first-child, .section-article>:nth-child(3) {
